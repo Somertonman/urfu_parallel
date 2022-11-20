@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-web-deployment
+  labels:
+    app: ai-web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ai-web
+  template:
+    metadata:
+      labels:
+        app: ai-web
+    spec:
+      containers:
+      - name: model
+        image: amex12/application:back
+        ports:
+        - containerPort: 8000
+      - name: streamlit
+        image: amex12/application:frontend_streamlit
+        ports:
+        - containerPort: 8501
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-web-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: ai-web
+  ports:
+    - protocol: TCP
+      port: 30002
+      targetPort: 8501
