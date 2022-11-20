@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-web-deployment
+  labels:
+    app: ai-web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ai-web
+  template:
+    metadata:
+      labels:
+        app: ai-web
+    spec:
+      containers:
+      - name: back
+        image: astepped/back
+        ports:
+        - containerPort: 8000
+      - name: frontend_streamlit
+        image: astepped/frontend_streamlit
+        ports:
+        - containerPort: 8501
