@@ -15,12 +15,12 @@ spec:
         app: ai-web
     spec:
       containers:
-      - name: model
-        image: amex12/application:back
+      - name: back
+        image: astepped/back
         ports:
         - containerPort: 8000
-      - name: streamlit
-        image: amex12/application:frontend_streamlit
+      - name: frontend_streamlit
+        image: astepped/frontend_streamlit
         ports:
         - containerPort: 8501
 ---
