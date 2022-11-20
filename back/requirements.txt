@@ -1,4 +1,7 @@
-transformers[tf-cpu]
+transformers
+tensorflow==2.9
 pydantic
 typing
-transformers
+uvicorn[standard]
+gunicorn
+fastapi
