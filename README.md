@@ -12,14 +12,18 @@ Masked language modeling (MLM): taking a sentence, the model randomly masks 15% 
 
 ## Web interface
 
-<img width="828" alt="image" src="https://user-images.githubusercontent.com/8521878/202905546-4fa14081-d0e1-45c4-a1e2-c3baaaf78ece.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/8521878/202905546-4fa14081-d0e1-45c4-a1e2-c3baaaf78ece.png">
 
 
 ### Successful result
-<img width="754" alt="image" src="https://user-images.githubusercontent.com/8521878/202905576-c74b022b-ab2e-48ef-95fb-d98d9182dedd.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/8521878/202905576-c74b022b-ab2e-48ef-95fb-d98d9182dedd.png">
 
 ### Errors
-<img width="754" alt="image" src="https://user-images.githubusercontent.com/8521878/202905606-5d041a93-733c-483d-8b46-0d4986beecfe.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/8521878/202905606-5d041a93-733c-483d-8b46-0d4986beecfe.png">
+
+### Screencast
+
+[![IMAGE ALT TEXT HERE](https://user-images.githubusercontent.com/8521878/203010134-2d29c220-c79c-4927-b2a9-bbcea8596fe9.png)](https://www.youtube.com/watch?v=Nd18P_x4cCQ)
 
 
 ## API description
