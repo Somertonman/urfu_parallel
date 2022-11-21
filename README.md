@@ -9,6 +9,7 @@ based on https://huggingface.co/bert-base-uncased
 Masked language modeling (MLM): taking a sentence, the model randomly masks 15% of the words in the input then run the entire masked sentence through the model and has to predict the masked words. This is different from traditional recurrent neural networks (RNNs) that usually see the words one after the other, or from autoregressive models like GPT which internally masks the future tokens. It allows the model to learn a bidirectional representation of the sentence.
 
 
+
 ## Web interface
 
 <img width="828" alt="image" src="https://user-images.githubusercontent.com/8521878/202905546-4fa14081-d0e1-45c4-a1e2-c3baaaf78ece.png">
